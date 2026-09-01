@@ -37,7 +37,7 @@ export const profile: ProfileData = {
     },
     {
       label: 'Core Backend',
-      value: 'PHP Ecosystem',
+      value: 'Frameworks & CMS',
       description: 'Drupal 8-11, Laravel, WordPress, Payload CMS',
       icon: 'Server',
     },
