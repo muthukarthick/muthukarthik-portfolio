@@ -1,7 +1,8 @@
-import { X, Printer, FileDown, CheckCircle2, Award, Mail, Phone, MapPin } from 'lucide-react';
+import { X, Printer, FileDown, Award, Mail, MapPin } from 'lucide-react';
 import { LinkedinIcon, GithubIcon } from '../common/Icons';
 import { profile } from '../../data/profile';
 import { experiences } from '../../data/experience';
+import { projects } from '../../data/projects';
 import { skillCategories } from '../../data/skills';
 import { educationList, certificationList } from '../../data/education';
 import { Button } from '../common/Button';
@@ -178,6 +179,38 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                       </span>
                     ))}
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Key Project Domains from CV */}
+          <div>
+            <h2 className="text-sm font-mono font-bold uppercase tracking-wider text-sky-400 mb-4 border-b border-slate-800/80 pb-1.5 print:text-blue-800 print:border-slate-300">
+              Key Project Domains &amp; Production Deliverables (From CV)
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+              {projects.map((p) => (
+                <div key={p.id} className="p-3 rounded-lg bg-slate-900/70 border border-slate-800/80 print:bg-slate-50 print:border-slate-300 space-y-1">
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="font-bold text-slate-200 print:text-black leading-tight">{p.title}</div>
+                    {p.liveUrl && (
+                      <a
+                        href={p.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[10px] font-mono text-sky-400 hover:text-sky-300 shrink-0 hover:underline"
+                      >
+                        Live Site ↗
+                      </a>
+                    )}
+                  </div>
+                  <div className="text-[11px] font-mono text-emerald-400">
+                    Team: {p.teamSize} • Role: {p.role}
+                  </div>
+                  <p className="text-slate-400 print:text-slate-700 leading-relaxed text-[11px] line-clamp-2">
+                    {p.description}
+                  </p>
                 </div>
               ))}
             </div>

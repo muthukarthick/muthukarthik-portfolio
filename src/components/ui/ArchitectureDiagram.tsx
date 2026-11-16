@@ -12,7 +12,7 @@ import {
 import { architectureLayers } from '../../data/architecture';
 
 export const ArchitectureDiagram: React.FC = () => {
-  const [selectedLayer, setSelectedLayer] = useState<string>(architectureLayers[1].id);
+  const [selectedLayer, setSelectedLayer] = useState<string>(architectureLayers[0].id);
 
   const activeLayerData =
     architectureLayers.find((l) => l.id === selectedLayer) || architectureLayers[0];

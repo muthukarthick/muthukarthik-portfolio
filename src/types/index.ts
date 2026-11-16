@@ -70,16 +70,25 @@ export interface ProjectDomain {
 export interface ProjectItem {
   id: string;
   title: string;
+  client?: string;
   category: string;
   domain: string;
   description: string;
   longDescription: string;
+  role: string;
+  teamSize: string;
+  myContributions: string[];
   technologies: string[];
   featured: boolean;
   metrics?: string;
   image?: string;
   github?: string;
   liveUrl?: string;
+  displayUrl?: string;
+  isLive?: boolean;
+  urlStatusText?: string;
+  previewUrl?: string;
+  highlights?: string[];
 }
 
 export interface EngineeringPrinciple {
@@ -94,11 +103,16 @@ export interface EngineeringPrinciple {
 export interface EducationItem {
   id: string;
   degree: string;
+  level?: string;
   institution: string;
   location: string;
   period: string;
+  percentage?: number;
   grade?: string;
+  division?: string;
   description?: string;
+  courses?: string[];
+  accentColor?: string;
 }
 
 export interface CertificationItem {

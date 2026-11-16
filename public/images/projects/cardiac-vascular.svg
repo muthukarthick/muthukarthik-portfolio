@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cv-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="60%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cv-box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f1d1d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#cv-bg)"/>
+  <rect width="800" height="40" fill="#200505"/>
+  <circle cx="20" cy="20" r="5" fill="#ef4444"/>
+  <circle cx="36" cy="20" r="5" fill="#f59e0b"/>
+  <circle cx="52" cy="20" r="5" fill="#10b981"/>
+  <rect x="75" y="8" width="550" height="24" rx="6" fill="#450a0a" stroke="#f87171" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="95" y="24" fill="#fecaca" font-family="monospace" font-size="11">🔒 http://cv.lifenethealth.org</text>
+  <rect x="580" y="12" width="36" height="16" rx="4" fill="#b91c1c" fill-opacity="0.4"/>
+  <text x="598" y="23" fill="#fca5a5" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="600">LIVE</text>
+
+  <rect y="40" width="800" height="52" fill="#300707" fill-opacity="0.9"/>
+  <text x="35" y="74" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">CARDIAC &amp; VASCULAR</text>
+  <text x="260" y="72" fill="#fca5a5" font-family="sans-serif" font-size="11">LifeNet Health Medical Technologies</text>
+
+  <text x="40" y="145" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">Cardiovascular Allograft Requisition</text>
+  <text x="40" y="175" fill="#fca5a5" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="600">&amp; Surgical Heart Valve Solutions</text>
+  <text x="40" y="210" fill="#fee2e2" font-family="sans-serif" font-size="13">Digital clinical ordering application for life-saving cardiovascular allografts, heart valves, and conduits</text>
+  <text x="40" y="230" fill="#fee2e2" font-family="sans-serif" font-size="13">with real-time dimension matching, surgeon verification, and emergency tissue requisition alerts.</text>
+
+  <g transform="translate(40, 255)">
+    <rect width="210" height="92" rx="12" fill="url(#cv-box)" stroke="#f87171" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="20" y="32" fill="#fca5a5" font-family="sans-serif" font-size="22" font-weight="800">Cardiac Valves</text>
+    <text x="20" y="54" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Dimension Matching</text>
+    <text x="20" y="72" fill="#fecaca" font-family="sans-serif" font-size="10">Emergency Requisition Flow</text>
+
+    <g transform="translate(230, 0)">
+      <rect width="210" height="92" rx="12" fill="url(#cv-box)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="20" y="32" fill="#38bdf8" font-family="sans-serif" font-size="22" font-weight="800">Instant Alert</text>
+      <text x="20" y="54" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">SMS &amp; Email Dispatch</text>
+      <text x="20" y="72" fill="#fecaca" font-family="sans-serif" font-size="10">Surgical team notification</text>
+    </g>
+
+    <g transform="translate(460, 0)">
+      <rect width="240" height="92" rx="12" fill="url(#cv-box)" stroke="#34d399" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="20" y="32" fill="#34d399" font-family="sans-serif" font-size="22" font-weight="800">Team of 2</text>
+      <text x="20" y="54" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Muthu Karthik (Lead)</text>
+      <text x="20" y="72" fill="#fecaca" font-family="sans-serif" font-size="10">Senior Full-Stack Architect</text>
+    </g>
+  </g>
+
+  <rect y="405" width="800" height="45" fill="#200505" fill-opacity="0.95"/>
+  <text x="40" y="432" fill="#f87171" font-family="sans-serif" font-size="11">Tech Stack: Drupal • PHP • MySQL • Clinical Data Security • REST APIs • Transactional Alerts</text>
+  <circle cx="750" cy="427" r="4" fill="#10b981"/>
+  <text x="735" y="431" fill="#10b981" font-family="sans-serif" font-size="11" text-anchor="end" font-weight="600">Live Clinical Portal</text>
+</svg>
